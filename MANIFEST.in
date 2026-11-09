@@ -1,0 +1,2 @@
+include LICENSE README.md
+include tests/__init__.py tests/test_audit.py
