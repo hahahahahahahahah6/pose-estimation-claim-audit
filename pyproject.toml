@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pose-estimation-claim-audit"
+version = "0.1.0"
+description = "Offline documentation and Python source consistency auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "Documentation Audit Contributors"}]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+pose-estimation-claim-audit = "pose_estimation_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["pose_estimation_claim_audit*"]
